@@ -1,6 +1,6 @@
 import reflex as rx
 import sys
-sys.path.append(r"C:\Users\caste\Desktop\PYTHON2\desarrolloweb")
+sys.path.append(r"C:\Users\caste\Desktop\PYTHON2\desarrolloweb\frontend")
 from frontend.navbar_items import navbar
 from frontend.header import header
 from frontend.link_button import links

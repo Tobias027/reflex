@@ -1,17 +1,19 @@
 import reflex as rx
 import sys
-sys.path.append(r'C:\Users\caste\Desktop\PYTHON2\desarrolloweb\frontend\link_icon')
-sys.path.append(r'C:\Users\caste\Desktop\PYTHON2\desarrolloweb\frontend\info_text')
-sys.path.append(r'C:\Users\caste\Desktop\PYTHON2\desarrolloweb\frontend\styles')
+sys.path.append(r'C:\Users\caste\Desktop\PYTHON2\desarrolloweb\frontend\frontend')
 from styles import Size,Color,TextColor,FontWeight,Font
 from link_icon import link_icon
 from info_text import info_text
 
 
-def header()->rx.Component:
+def header(details=True, live=False)->rx.Component:
     return rx.vstack(
         rx.hstack(
             rx.avatar(
+                rx.cond(
+                    live,
+                    rx.icon_button("calendar")
+                ),
                 fallback="TC",
                 size="7",
                 padding="2px",

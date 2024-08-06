@@ -1,6 +1,6 @@
 import reflex as rx
 import sys
-sys.path.append(r"C:\Users\caste\Desktop\PYTHON2\desarrolloweb\frontend\styles")
+sys.path.append(r"C:\Users\caste\Desktop\PYTHON2\desarrolloweb\frontend\frontend")
 from styles import Size
 
 def link_icon(url:str,tag:str)->rx.Component:

@@ -1,6 +1,6 @@
 import reflex as rx
 import sys
-sys.path.append(r"C:\Users\caste\Desktop\PYTHON2\desarrolloweb\frontend")
+sys.path.append(r"C:\Users\caste\Desktop\PYTHON2\desarrolloweb\frontend\frontend")
 from styles import Size,Color,TextColor
 
 def info_text(title:str, body:str)->rx.Component:

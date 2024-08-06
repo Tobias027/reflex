@@ -6,16 +6,19 @@ from frontend.header import header
 from frontend.link_button import links
 from frontend.footer import footer
 from frontend.styles import MAX_WIDTH,Size
+from frontend.state import State
 from frontend.routes import Route
 
 @rx.page(
-    route=Route.Courses.value
+    route=Route.Courses.value,
+    on_load=State.check_live
 )
 def courses()->rx.Component:
     return rx.box(
             navbar(),
             rx.center(
                 rx.vstack(
+                    header(),
                     links(),
                     max_width=MAX_WIDTH,
                     width="100%",
@@ -23,6 +26,7 @@ def courses()->rx.Component:
                     padding=Size.Big.value
                 )
             ),
+            footer(),
             align_items="start"
     )
 

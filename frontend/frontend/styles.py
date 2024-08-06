@@ -1,6 +1,6 @@
 import reflex as rx
 MAX_WIDTH="600px"
-import sys
+
 from enum import Enum
 
 STYLESHEETS=["https://fonts.googleapis.com/css?family=Poppins:wght@300;500&display=swap",
